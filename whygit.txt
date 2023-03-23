@@ -1,0 +1,70 @@
+
+aluno tds@SLE208512 MINGW64 ~
+$ cd descartes/
+bash: cd: descartes/: No such file or directory
+
+aluno tds@SLE208512 MINGW64 ~
+$ cd desktop/
+
+aluno tds@SLE208512 MINGW64 ~/desktop
+$ cd descartes/
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/aluno tds.SLE208512/Desktop/descartes/.git/
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ touch .gitignore
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ git add whygit.txt
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ git commit -m code
+[master (root-commit) 9cd8e1e] code
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 whygit.txt
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ git remote add origin https://github.com/twkYan/uvapassaoverated.git
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/twkYan/uvapassaoverated.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (dev)
+$ git add whygit.txt
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (dev)
+$ git push -u origen dev
+fatal: 'origen' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (dev)
+$ git push -u origin dev
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/twkYan/uvapassaoverated/pull/new/dev
+remote:
+To https://github.com/twkYan/uvapassaoverated.git
+ * [new branch]      dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+aluno tds@SLE208512 MINGW64 ~/desktop/descartes (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
